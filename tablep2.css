@@ -1,0 +1,8 @@
+table,th,td{
+    text-align: center;
+    width: 20%;
+}
+th{
+    text-align: end;
+}
+

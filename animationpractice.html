@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animations practice</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                /* background-color: red; */
+                animation-name: bunny;
+                animation-duration: 10s;
+                animation-delay: 2s;
+                position: relative;
+                animation-iteration-count: infinite;
+                display: inline;
+                img{
+                    margin-right:200px;
+                }
+                animation-direction:reverse;
+            }
+            /* @keyframes bunny {
+                from{
+                    background-color: red;
+                }
+                to{
+                    background-color: blue;
+                }
+            } */
+             /* @keyframes bunny{
+                0%{background-color: red;}
+                25%{background-color: blue;}
+                50%{background-color: green;}
+                75%{background-color: orangered;}
+                100%{background-color: aqua;}
+             } */
+              @keyframes bunny{
+                0%{left: -800px; top: 0px;}
+                /* 25%{left: 200px; top: 0px;}
+                50%{left: 200px; top: 200px;}
+                75%{left: 0px; top: 200px;} */
+                100%{left:1700px; top: 0px;}
+              }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="logo.jpeg" alt="Error">
+            <img src="logo.jpeg" alt="Error">
+        </div>
+    </body>
+</html>

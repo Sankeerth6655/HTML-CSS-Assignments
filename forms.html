@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="forms.css">
+    </head>
+    <body>
+        <table>
+            <!--FirstName-->
+            <tr>
+                <td>First Name</td>
+                <td><input type="name" name="fname" placeholder="enter fname"></td>
+                <td><span>(***Please enter valid fname***)</span></td>
+            </tr>
+        
+            <!--LastName-->
+            <tr>
+                <td>Last Name</td>
+                <td><input type="name" name="lname" placeholder="enter lname"></td>
+                <td><span>(***Please enter valid lname***)</span></td>
+            </tr>
+            <!--Password-->
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pass" placeholder="enter password"></td>
+                <td><span>(***Please enter valid password***)</span></td>
+            </tr>
+            <!--Confirm Password-->
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" name="cpass" placeholder="enter confirm password"></td>
+                <td><span>(***password and confirm password should be same***)</span></td>
+            </tr>
+            <!--email-->
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="em" placeholder="enter email id"></td>
+                <td><span>(***Please enter valid email id***)</span></td>
+            </tr>
+            <!--Age-->
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="age" placeholder="enter your age"></td>
+                <td><span>(***Please enter valid age***)</span></td>
+            </tr>
+            <!--Mobile no.-->
+            <tr>
+                <td>Mobile</td>
+                <td><input type="tel" name="mbno" placeholder="enter mobile number"></td>
+                <td><span>(***Please enter valid mobile number***)</span></td>
+            </tr>
+            <!--Date-->
+            <tr>
+                <td>DOB</td>
+                <td><input type="date" name="dob" placeholder="enter your DOB"></td>
+                <td><span>(***Please enter valid DOB***)</span></td>
+            </tr>
+            <!--Pref time-->
+            <tr>
+                <td>Preferred time</td>
+                <td><input type="time" name="ptime" placeholder="enter preferred time"></td>
+                <td><span>(***Please enter valid time***)</span></td>
+            </tr>
+            <!--gender-->
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" placeholder="enter your gender" value="Male">Male
+                <input type="radio" name="gender" placeholder="enter your gender" value="Female">Female
+                </td>
+                <td><span>(***Please enter valid gender***)</span></td>
+            </tr>
+            <!--languages-->
+            <tr>
+                <td>Languages</td>
+                <td><input type="checkbox" name="lang" placeholder="enter the language">HTML
+                <input type="checkbox" name="lang" placeholder="enter the language" >CSS
+                <input type="checkbox" name="lang" placeholder="enter the language" >PHP
+                </td>
+                <td><span>(***Please enter valid language***)</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="backend">Java
+                <input type="checkbox" name="backend">ReactJS
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country" >
+                        <option value="">select country</option>
+                        <option value="ind">India</option>
+                        <option value="pak">Pakistan</option>
+                        <option value="chn">China</option>
+                        <option value="mal">Maldives</option>
+                    </select>
+                </td>
+                <td>(***Please select valid country***)</td>
+            </tr>
+            <!--Address-->
+            <tr>
+                <td>Address</td>
+                <td><textarea name="addr" id="" rows="5"></textarea></td>
+                <td>(***Please enter atleast 50 words***)</td>
+            </tr>
+            <!--Submit and reset-->
+            <tr>
+                <td><input type="submit" value="Save">
+                <td><input type="reset" value="Reset">
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

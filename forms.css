@@ -1,0 +1,8 @@
+table{
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 50%;
+    margin: 100px auto;
+    background:linear-gradient(90deg,orange,red);  
+    color: white;
+}

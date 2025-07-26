@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Specificity</title>
+        <style>
+            #id1{
+                color: green;
+                /* 2nd */
+            }
+            .c{
+                color: red;
+                /* 3rd */
+            }
+            *{
+                color: white;
+                /* 5th */
+            }
+            h1{
+                color: brown;
+                /* 4th */
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="c" id="id1" style="color: blue;">ExcelR</h1> 
+        <!-- 1st priority/specificity for inline selector-->
+    </body>
+</html>

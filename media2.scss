@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+.parent{
+    height: 100vh;
+}
+.header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+
+    &_logo{
+        font-size: 4vw;
+    }
+
+    &_menu{
+        font-size: 2vw;
+        display: flex;
+        gap: 20px;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+}
+.main{
+    height: 80%;
+}
+.footer{
+    height: 10%;
+}
+
+@media (max-width:576px)
+{
+    .header{
+        justify-content: center;
+        align-items: center;
+        &_menu{
+            display: none;
+        }
+    }
+}

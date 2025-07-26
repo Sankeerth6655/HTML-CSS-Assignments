@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#screen {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -55%);
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-color: red;
+  }
+  .parent, #screen {
+    color: white;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    background-color: green;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}/*# sourceMappingURL=media1.css.map */

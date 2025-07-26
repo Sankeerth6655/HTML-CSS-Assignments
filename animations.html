@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animations</title>
+    <style>
+        /* div{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: Excelr;
+                animation-duration: 5s;
+            }
+            @keyframes Excelr{
+                from{background-color: brown;}
+                to{background-color: aqua;}
+            } */
+
+        /* div{
+                width: 200px;
+                height: 200px;
+                animation-name: Excelr;
+                animation-duration: 10s;
+            }
+            @keyframes Excelr{
+                0%{background-color: darkgreen;}
+                25%{background-color: aqua;}
+                50%{background-color: yellow;}
+                75%{background-color: blueviolet;}
+                100%{background-color: crimson;}
+            } */
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: Excelr;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            position: relative;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes Excelr {
+            0% {left: 0px; top: 0px; background-color: red;}
+
+            25% {left: 200px; top: 0px; background-color: blue;}
+
+            50% {left: 200px; top: 200px; background-color: green;}
+
+            75% {left: 0px; top: 200px; background-color: orangered;}
+
+            100% {left: 0px; top: 0px; background-color: aqua;}
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div></div> -->
+    <!-- <div></div> -->
+    <div></div>
+</body>
+
+</html>

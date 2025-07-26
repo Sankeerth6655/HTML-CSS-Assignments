@@ -1,0 +1,58 @@
+$dim1:992px;
+$col1:green;
+$col2:white;
+
+$dim2:768px;
+$col3:blue;
+
+$dim3:576px;
+
+//fixed dimensions decided by the government.They are known as break point:1400px,1200px,992px,768px,576px...
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: 100vh;
+
+    // display: grid;
+    // height: 100vh;
+    // place-content: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#screen{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-55%);
+}
+
+@media (max-width:1200px){  //only possible in scss,not possible in css
+    body{
+        background-color: red;
+    }
+    .parent,#screen{
+        color: white;
+    }
+}
+
+@media (max-width:$dim1){
+    body{
+        background-color: $col1;
+    }
+}
+@media (max-width:$dim2){
+    body{
+        background-color: $col3;
+    }
+}

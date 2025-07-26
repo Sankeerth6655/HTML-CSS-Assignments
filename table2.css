@@ -1,0 +1,26 @@
+table{
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse; 
+    /* border collapse is used to collapse borders and look it like a single line border. */
+}
+table,th,td{
+    border: 2px solid black;
+}
+tr:nth-child(even){
+    background-color: blue;
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: pink;
+}
+th{
+    height: 60px;
+}
+td{
+    height: 40px;
+}
+tr:hover{
+    background-color: red;
+    color: white;
+}

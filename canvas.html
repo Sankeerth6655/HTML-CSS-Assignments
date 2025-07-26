@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+    </head>
+    <body>
+        <!-- <canvas height="200px" width="200px" style="border: 1px solid red;"></canvas> -->
+
+        <canvas id="mycanvas1" height="100px" width="200px" style="border: 1px solid red;"></canvas>
+        <canvas id="mycanvas2" height="100px" width="200px" style="border: 1px solid red;"></canvas>
+        <canvas id="mycanvas3" height="100px" width="200px" style="border: 1px solid red;"></canvas>
+        <canvas id="mycanvas4" height="100px" width="200px" style="border: 1px solid red;"></canvas>
+        <canvas id="mycanvas5" height="100px" width="200px" style="border: 1px solid red;"></canvas>
+        <canvas id="mycanvas6" height="100px" width="200px" style="border: 1px solid red;"></canvas>
+        <canvas id="mycanvas7" height="100px" width="200px" style="border: 1px solid red;"></canvas>
+        <canvas id="mycanvas8" height="100px" width="200px" style="border: 1px solid red;"></canvas>
+
+        <script>
+
+            let ref1= document.getElementById("mycanvas1");
+            let ctx1 = ref1.getContext("2d");
+            ctx1.moveTo(200,0);
+            ctx1.lineTo(0,100);
+            ctx1.stroke();
+
+            let ref2 = document.getElementById("mycanvas2");
+            let ctx2 = ref2.getContext("2d");
+            ctx2.moveTo(0,0);
+            ctx2.lineTo(200,100);
+            ctx2.stroke();
+
+            let ref3= document.getElementById("mycanvas3");
+            let ctx3= ref3.getContext("2d");
+            ctx3.moveTo(0,0);
+            ctx3.lineTo(200,100);
+            ctx3.moveTo(200,0);
+            ctx3.lineTo(0,100);
+            ctx3.stroke();
+
+            let ref4=document.getElementById("mycanvas4");
+            let ctx4=ref4.getContext("2d");
+            ctx4.moveTo(0,50);
+            ctx4.lineTo(200,50);
+            ctx4.moveTo(100,0);
+            ctx4.lineTo(100,100);
+            ctx4.stroke();
+
+            let ref5=document.getElementById("mycanvas5");
+            let ctx5=ref5.getContext("2d");
+            ctx5.beginPath();
+            ctx5.arc(100,50,40,0,2*Math.PI);  //2*Math.PI means 360degrees. Circle starts from 0 to 360 degrees.
+            ctx5.stroke();
+
+            let ref6=document.getElementById("mycanvas6");
+            let ctx6=ref6.getContext("2d");
+            ctx6.moveTo(100,0);
+            ctx6.lineTo(100,100);
+            ctx6.moveTo(0,50);
+            ctx6.lineTo(200,50);
+            ctx6.stroke();
+            ctx6.beginPath();
+            ctx6.arc(100,50,40,0,2*Math.PI);
+            ctx6.stroke();
+
+            let ref7=document.getElementById("mycanvas7");
+            let ctx7=ref7.getContext("2d");
+            ctx7.font="20px Arial";
+            // ctx7.fillText("ExcelR",60,58);
+            ctx7.strokeText("ExcelR",60,58);
+
+            let ref8=document.getElementById("mycanvas8");
+            let ctx8=ref8.getContext("2d");
+            ctx8.beginPath();
+            ctx8.arc(100,50,45,0,2*Math.PI);
+            ctx8.stroke();
+            ctx8.font="15px Arial";
+            ctx8.fillText("ExcelR",75,55);
+        </script>
+
+        <canvas id="mycanvas" width="200px" height="100px" style="border: 1px solid red;"></canvas>
+        <script>
+            let ref = document.getElementById("mycanvas");
+            let ctx = ref.getContext("2d");
+
+            let grd = ctx.createLinearGradient(0,0,200,0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"green");
+            ctx.fillStyle=grd;
+            ctx.fillRect(10,10,180,80);
+        </script>
+    </body>
+</html>

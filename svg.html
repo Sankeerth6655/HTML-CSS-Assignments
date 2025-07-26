@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>svg</title>
+    </head>
+    <body>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="45" stroke="red" stroke-width="2" fill="green"></circle>
+            <!-- circle tag dont work if we do not give radius to it. -->
+        </svg>
+        <svg width="200" height="100">
+            <rect x="10" y="10" width="180" height="80" stroke="red" stroke-width="1" fill="green"></rect>
+        </svg>
+
+        <!-- ***Q: How to insert text inside a circle using svg tag? -->
+        <svg width="200" height="100">  
+            <circle cx="100" cy="50" r="45" stroke="red" stroke-width="2"></circle>
+            <!-- black color will be filled automatically when color is not given in attributes -->
+            <text fill="white" x="75" y="55">ExcelR</text>
+        </svg>
+    </body>
+</html>
